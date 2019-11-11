@@ -1,5 +1,5 @@
 # Monte Carlo Simulation of XY Spins
-Simulator and GUI for Magnetism in 2D XY model
+Simulator and GUI for Magnetism in 2D XY model in Python 3
 
 Alex Lawson 
 
@@ -7,16 +7,13 @@ In the 2-dimensional XY Model each spin is defined by an angle <img src="https:/
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos{\theta_i-\theta_j}+\sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
-
-
 (Actual energy scales are nonphysical). State of each spin at each iteration chosen from Bolzmann-Gibbs distribution.
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Prob(E_i)=\frac{1}{Z}e^{\frac{-E_i}{k_BT}},Z=\sum_{i}e^{\frac{-E_i}{k_BT}}" title="Gibbs/Bolz" />
 
-VERY QUICK VERSION: DOWNLOAD JUST THE FOLDER "QUICK DEMO"- RUN XY_MC_interact.py - Play with controls. 
-(Should work with anaconda distribution default packages)
+__VERY QUICK VERSION__: DOWNLOAD JUST THE FOLDER "QUICK DEMO"- RUN XY_MC_interact.py - Play with controls. 
+(Should work with Anaconda distribution default packages)
 
-NB: To run these programs you will need:
+General Description in 
 
 1) Tkinter - This is the animal package I'm usuing. It should come with a normal anaconda distribution. It doesn't work in Jupyter, so make sure to run it on you computer.
 
