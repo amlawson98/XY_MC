@@ -2,16 +2,17 @@
 
 Alex Lawson 
 
-Simulates Lattice of Spins in 2D XY model, where each spin in defined by an angle <img src="https://latex.codecogs.com/svg.latex?\Large&space;\theta_i" title="theta_i" /> , and the total energy is given by a dot product with all nearest neighbor term  plus a dot product with external field term. 
+Simulates Lattice of Spins in 2D XY model, where each spin in defined by an angle <img src="https://latex.codecogs.com/svg.latex?\Large&space;\theta_i" title="theta_i" /> , and the total energy is given by a dot product with all nearest neighbors term  plus a dot product with an external field term. 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos{\theta_i-\theta_j}+\sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-\sum_{<ij>}cos(\theta_i)\beta_i\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
 (Actual energy scales are nonphysical). State of each spin at each iteration chosen from Bolzmann-Gibbs distribution.
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;Prob(E_i)=\frac{1}{Z}e^{\frac{-E_i}{k_B T}}, Z=\sum_{i}e^{\frac{-E_i}{k_B T}}" title="Gibbs/Bolz" />
 
-VERY QUICK VERSION: DOWNLOAD THE FOLDER "QUICK DEMO"- RUN XY_MC_interact.py - Play with controls.
+VERY QUICK VERSION: DOWNLOAD JUST THE FOLDER "QUICK DEMO"- RUN XY_MC_interact.py - Play with controls. 
+(Should work with anaconda distribution default packages)
 
 NB: To run these programs you will need:
 
