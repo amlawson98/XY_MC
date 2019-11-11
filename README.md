@@ -24,7 +24,7 @@ A Quick __Explainer__ for what everything is:
   
   - The rest is all different versions/subprojects, function libraries to import, and diagrams/pictures for presentations and reports.
 
-![Alt text](Notable_XY_Sim_Images\XY_MC_interact_screenshot.png?raw=true "Title")
+![Alt text](Notable_XY_Sim_Images/XY_MC_interact_screenshot.PNG?raw=true "Title")
 
 __Dependencies__
 1) Python 3, with packages from default Anaconda Distribution
