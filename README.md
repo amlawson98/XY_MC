@@ -1,8 +1,9 @@
 # Monte Carlo Simulation of XY Spins
+Simulator and GUI for Lattice of Spins in 2D XY model
 
 Alex Lawson 
 
-Simulates Lattice of Spins in 2D XY model, where each spin in defined by an angle <img src="https://latex.codecogs.com/svg.latex?\Large&space;\theta_i" title="theta_i" /> , and the total energy is given by a dot product with all nearest neighbors term  plus a dot product with an external field term. 
+In the 2-dimensional XY Model each spin is defined by an angle <img src="https://latex.codecogs.com/svg.latex?\Large&space;\theta_i" title="theta_i" /> , and the total energy is given by a dot product with all nearest neighbors term  plus a dot product with an external field term. 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos{\theta_i-\theta_j}+\sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
