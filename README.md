@@ -9,7 +9,7 @@ Simulates Lattice of Spins in 2D XY model, where each spin in defined by an angl
 
 
 (Actual energy scales are nonphysical). State of each spin at each iteration chosen from Bolzmann-Gibbs distribution.
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;Prob(E_i)=\frac{1}{Z}e^{\frac{-E_i}{k_B T}},Z=\sum_{i}e^{\frac{-E_i}{k_B T}}" title="Gibbs/Bolz" />
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;Prob(E_i)=\frac{1}{Z}e^{\frac{-E_i}{k_BT}},Z=\sum_{i}e^{\frac{-E_i}{k_BT}}" title="Gibbs/Bolz" />
 
 VERY QUICK VERSION: DOWNLOAD JUST THE FOLDER "QUICK DEMO"- RUN XY_MC_interact.py - Play with controls. 
 (Should work with anaconda distribution default packages)
