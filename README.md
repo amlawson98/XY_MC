@@ -22,4 +22,5 @@ Use pip install tqdm. I doubt it'll conflict with any installed packages. Its pr
 
 A Quick Explainer for what everything is:
 
-XY_MC.py is the main program here. It centers around a function called optimize_and_draw, that runs the simulated annealing algorithm
+XY_MC.py is the main program here. It centers around a function called optimize_and_draw, that runs the simulated annealing algorithm.
+XY_MC_interact.py pulls up a Tkinter GUI when run, which allows the user to modify lattice type, temperature and Hamiltonian at will. 
