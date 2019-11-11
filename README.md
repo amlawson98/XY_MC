@@ -17,11 +17,10 @@ General Description in Alex_Lawson_Report.pdf
 
 A Quick Explainer for what everything is:
 
-- XY_MC.py is the main program here. It centers around a function called optimize_and_draw, that runs the simulated annealing algorithm.
+  - XY_MC.py is the main program here. It centers around a function called optimize_and_draw, that runs the simulated annealing algorithm.
 
-- XY_MC_interact.py pulls up a Tkinter GUI when run, which allows the user to modify lattice type, temperature and Hamiltonian at will. 
+  - XY_MC_interact.py pulls up a Tkinter GUI when run, which allows the user to modify lattice type, temperature and Hamiltonian at will. 
 
-- 
 __Dependencies__
 1) Python 3, with packages from default Anaconda Distribution
   - Using packages: tkinter (For GUI), numpy, random, copy, matplotlib, math, time, numba, sklearn, PIL
