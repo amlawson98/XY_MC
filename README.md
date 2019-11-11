@@ -1,4 +1,4 @@
-**__Monte Carlo Simulation of XY Spins__** 
+# Monte Carlo Simulation of XY Spins
 
 Alex Lawson 
 
