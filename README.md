@@ -1,5 +1,5 @@
 # Monte Carlo Simulation of XY Spins
-Simulator and GUI for Lattice of Spins in 2D XY model
+Simulator and GUI for Magnetism in 2D XY model
 
 Alex Lawson 
 
