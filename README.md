@@ -5,7 +5,7 @@ Alex Lawson
 
 In the 2-dimensional XY Model each spin is defined by an angle <img src="https://latex.codecogs.com/svg.latex?\Large&space;\theta_i" title="theta_i" /> , and the total energy is given by a dot product with all nearest neighbors term  plus a dot product with an external field term. 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos{\theta_i-\theta_j}+\sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos(\theta_i-\theta_j)+\sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
 
 (Actual energy scales are nonphysical). State of each spin at each iteration chosen from Bolzmann-Gibbs distribution.
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Prob(E_i)=\frac{1}{Z}e^{\frac{-E_i}{k_BT}},Z=\sum_{i}e^{\frac{-E_i}{k_BT}}" title="Gibbs/Bolz" />
@@ -13,7 +13,7 @@ In the 2-dimensional XY Model each spin is defined by an angle <img src="https:/
 __VERY QUICK VERSION__: DOWNLOAD JUST THE FOLDER "QUICK DEMO"- RUN XY_MC_interact.py - Play with controls. 
 (Should work with Anaconda distribution default packages)
 
-General Description in 
+General Description in Alex_Lawson_Report.pdf
 
 1) Tkinter - This is the animal package I'm usuing. It should come with a normal anaconda distribution. It doesn't work in Jupyter, so make sure to run it on you computer.
 
