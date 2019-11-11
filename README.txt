@@ -1,4 +1,9 @@
-Monte Carlo Simulation of XY Spins 
+**_Monte Carlo Simulation of XY Spins_** 
+Alex Lawson 
+
+Simulates Lattice of Spins in 2D XY model, where each spin in defined by an angle theta_i, and the total energy is given by a dot product with all nearest neighbor term (J*cos(theta_i - theta_j)) plus a dot product with external field term (B*cos(theta_i)). (Actual energy scales are nonphysical). State of each spin at each iteration chosen from Bolzmann-Gibbs distribution.
+
+VERY QUICK VERSION: DOWNLOAD THE FOLDER "QUICK DEMO"- RUN XY_MC_interact.py - Play with controls.
 
 NB: To run these programs you will need:
 
