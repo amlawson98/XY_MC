@@ -7,12 +7,11 @@ In the 2-dimensional XY Model for spins on a lattice, each spin is defined by an
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos(\theta_i-\theta_j)+\sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
 
-(Actual energy scales are nonphysical). State of each spin at each iteration chosen from Bolzmann-Gibbs distribution.
+(Actual energy scales are nonphysical). State of each spin at each iteration chosen from Boltzmann-Gibbs distribution.
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Prob(E_i)=\frac{1}{Z}e^{\frac{-E_i}{k_BT}},Z=\sum_{i}e^{\frac{-E_i}{k_BT}}" title="Gibbs/Bolz" />
 
 __VERY QUICK VERSION__: DOWNLOAD JUST THE WHOLE FILE AS A ZIP - __RUN XY_MC_interact.py__ - Play with controls. 
 (Should work with Anaconda distribution default packages)
-
 
 
 A Quick __Explainer__ for what everything is:
@@ -22,6 +21,8 @@ A Quick __Explainer__ for what everything is:
   - XY_MC.py is the main program here. It centers around a function called optimize_and_draw, that runs the simulated annealing algorithm.
 
   - XY_MC_interact.py pulls up a Tkinter GUI when run, which allows the user to modify lattice type, temperature and Hamiltonian at will. 
+  
+  - The rest is all different versions/subprojects, function libraries to import, and diagrams/pictures for presentations and reports.
 
 __Dependencies__
 1) Python 3, with packages from default Anaconda Distribution
