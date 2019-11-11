@@ -3,7 +3,7 @@
 Alex Lawson 
 
 Simulates Lattice of Spins in 2D XY model, where each spin in defined by an angle theta_i, and the total energy is given by a dot product with all nearest neighbor term  plus a dot product with external field term. 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos{\theta_i-\theta_j} + \sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;H=\sum_{<ij>}Jcos{\theta_i-\theta_j}+\sum_{i}Bcos(\theta_i)" title="Hamiltonian" /> 
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
 
