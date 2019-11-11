@@ -25,5 +25,5 @@ __Dependencies__
 1) Python 3, with packages from default Anaconda Distribution
     - Using packages: tkinter (For GUI), numpy, random, copy, matplotlib, math, time, numba, sklearn, PIL
 
-2) tdqm - This makes the progress bar. This essential for anything **except** XY_MC_interact.py, since it tells you the Temperature and Energy as well as the system anneals. 
+2) tdqm - This makes the progress bar. This essential for anything **except XY_MC_interact.py**, since it tells you the Temperature and Energy as well as the system anneals. 
     - Use pip install tqdm. I doubt it'll conflict with any installed packages. Its pretty lightweight. 
