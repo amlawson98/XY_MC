@@ -1,5 +1,5 @@
 # Monte Carlo Simulation of XY Spins
-Simulator and GUI for Magnetism in 2D XY model in Python 3
+Simulator and GUI for Magnetism with 2D XY model in Python 3
 
 Alex Lawson 
 
