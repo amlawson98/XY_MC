@@ -13,9 +13,11 @@ In the 2-dimensional XY Model for spins on a lattice, each spin is defined by an
 __VERY QUICK VERSION__: DOWNLOAD JUST THE WHOLE FILE AS A ZIP - __RUN XY_MC_interact.py__ - Play with controls. 
 (Should work with Anaconda distribution default packages)
 
-General Description in Alex_Lawson_Report.pdf
 
-A Quick Explainer for what everything is:
+
+A Quick __Explainer__ for what everything is:
+
+  - General Description and results in Alex_Lawson_Report.pdf
 
   - XY_MC.py is the main program here. It centers around a function called optimize_and_draw, that runs the simulated annealing algorithm.
 
