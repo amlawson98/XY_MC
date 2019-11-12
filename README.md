@@ -1,5 +1,5 @@
 # Monte Carlo Simulation of XY Spins
-Simulator and GUI for Magnetism in 2D XY model in Python 3
+Simulator and GUI for Magnetism with 2D XY model in Python 3
 
 Alex Lawson 
 
@@ -23,6 +23,8 @@ A Quick __Explainer__ for what everything is:
   - XY_MC_interact.py pulls up a Tkinter GUI when run, which allows the user to modify lattice type, temperature and Hamiltonian at will. 
   
   - The rest is all different versions/subprojects, function libraries to import, and diagrams/pictures for presentations and reports.
+
+![Alt text](Notable_XY_Sim_Images/XY_MC_interact_screenshot.PNG?raw=true "Screenshot for XY_MC_interact.py")
 
 __Dependencies__
 1) Python 3, with packages from default Anaconda Distribution
