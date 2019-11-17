@@ -19,7 +19,7 @@ cmap = cmapp.get_cmap()
 
 
 class spin(object):
-    def __init__(self, name,  neighbors, pos, direction= random.uniform(0,2*pi), current_energy = 0, lattice_size = 600):
+    def __init__(self, name, neighbors, pos, direction= random.uniform(0,2*pi), current_energy = 0, lattice_size = 600):
         self.name = name
         self.direction = direction
         self.neighbors = neighbors
@@ -324,25 +324,25 @@ def set_with_temp_scale(scale_val):
     global scale_temp
     scale_temp = np.exp(float(scale_val))
 
-temp_scale = Scale(f2, from_=-10, to=5., length=300, resolution= 0.001, orient= VERTICAL, showvalue=1, command= set_with_temp_scale, label = "log(Temp)")
+temp_scale = Scale(f2, from_=5, to=-10, length=300, resolution= 0.001, orient= VERTICAL, showvalue=1, command= set_with_temp_scale, label = "log(Temp)")
 temp_scale.place()#rely = 30, relx = 80)
 temp_scale.pack()#fill=BOTH, side=LEFT)
-
-def set_with_H_scale(scale_val):
-    global scale_H
-    scale_H = float(scale_val)
-
-H_scale = Scale(f2, from_=5, to=0,resolution= 0.01, orient= HORIZONTAL, showvalue=1, command= set_with_H_scale, label = "B (feild ext eng.)")
-H_scale.place()#rely = 30, relx = 80)
-H_scale.pack()#fill=BOTH, side=LEFT)
 
 def set_with_J_scale(scale_val):
     global scale_J
     scale_J = float(scale_val)
 
-J_scale = Scale(f2, from_=1, to=-1,resolution= 1, orient= HORIZONTAL, showvalue=1, command= set_with_J_scale, label = "J (interaction eng.)")
+J_scale = Scale(f2, from_=1, to=-1,resolution= 1, orient= HORIZONTAL, showvalue=1, command= set_with_J_scale, label = "J (Interaction Energy)")
 J_scale.place()#rely = 30, relx = 80)
-J_scale.pack()#fill=BOTH, side=LEFT)
+J_scale.pack(fill=BOTH)
+
+def set_with_H_scale(scale_val):
+    global scale_H
+    scale_H = float(scale_val)
+
+H_scale = Scale(f2, from_=5, to=0,resolution= 0.01, orient= HORIZONTAL, showvalue=1, command= set_with_H_scale, label = "B (External Field Energy)")
+H_scale.place()
+H_scale.pack(fill=BOTH)
 
 running = False
 txt_var = StringVar()
@@ -354,11 +354,13 @@ def pause_play():
     global running
     if running:
         txt_var.set("Play")
+        pause_button.configure(bg ="light green")
     if not running:
-        txt_var.set("Pause")    
+        txt_var.set("Pause")  
+        pause_button.configure(bg = "coral")
     running = not running
 
-pause_button = Button(button_frame,textvariable=txt_var, command= pause_play)
+pause_button = Button(button_frame, textvariable=txt_var, command= pause_play, bg="light green")
 pause_button.pack(side=LEFT)
 
 
@@ -393,15 +395,16 @@ default_number_dict = {'Square': 10,'Snub-Square': 3, 'Triangular': 10,
     'Hexagonal': 10, 'Kagome': 6, 
     'Rhombitrihexagonal': 6, 'Snub-Trihexagonal': 6,
     'Truncated-Hexagonal': 6, 'Pentagon': 1}
-lattice_choices = lattices_dict.keys()
+lattice_choices = ["Lattice Type: \n" + key for key in lattices_dict.keys()]
 
 
-latticeMenu = OptionMenu(f2, name_string, *lattice_choices)#, text="Lattice")
+latticeMenu = OptionMenu(f2, name_string, *lattice_choices)# text="Lattice")
+
 # on change dropdown value
 def change_dropdown(*args):
     global lattice_type
-    name_string.get()
-    lattice_type = name_string.get()
+    string = name_string.get()
+    lattice_type = string[15:]  
 
 # link function to change dropdown
 name_string.trace('w', change_dropdown)
@@ -424,7 +427,7 @@ def optimize_and_draw(lattice, num_lines, num_ticks = 4, interact = True, show =
     1)
     num_sites = len(list(best_config.keys()))
     lattice_type = current_lattice_name
-    name_string.set(lattice_type)
+    name_string.set("Lattice Type: \n" + lattice_type)
     latticeMenu.pack()
     scale_J, scale_H = 0, 0 
     best_config= sweep_update(best_config, 
