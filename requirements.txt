@@ -1,0 +1,4 @@
+tk
+numpy
+matplotlib
+numba

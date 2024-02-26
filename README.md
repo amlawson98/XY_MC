@@ -10,9 +10,10 @@ In the 2-dimensional XY Model for spins on a lattice, each spin is defined by an
 (Actual energy scales are nonphysical). State of each spin at each iteration chosen from Boltzmann-Gibbs distribution.
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;Prob(E_i)=\frac{1}{Z}e^{\frac{-E_i}{k_BT}},Z=\sum_{i}e^{\frac{-E_i}{k_BT}}" title="Gibbs/Bolz" />
 
-__VERY QUICK VERSION__: DOWNLOAD JUST THE WHOLE FILE AS A ZIP - __RUN XY_MC_interact.py__ - Play with controls. 
+__VERY QUICK VERSION__: DOWNLOAD JUST THE WHOLE FILE AS A ZIP - __RUN python3 main.py__ - Play with controls. 
 (Should work with Anaconda distribution default packages)
 
+dependencies can be downloaded in pip3 install -r requirements.txt
 
 A Quick __Explainer__ for what everything is:
 
